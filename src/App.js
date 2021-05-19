@@ -1,25 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import AddressBook from './AddressBook.js';
+import contacts from "./data.js";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    console.log( contacts );
+    
+    return (
+      <div className="App">
+        <h1>My address book</h1>
+            <AddressBook contacts={contacts}/>
+      </div>
+    );
 }
 
 export default App;
